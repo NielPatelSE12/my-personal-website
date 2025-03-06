@@ -1,47 +1,114 @@
+/* Overall Page Styling */
 .about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-    background-color: #001f3f; /* Dark Blue */
-    font-family: 'Georgia', 'Times New Roman', serif; /* Professional text style */
-    padding-top: 50px; /* Moves content up */
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
-  .about-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #ffffff; /* White text */
-    margin-bottom: 15px;
-    text-transform: uppercase; /* Makes it look more professional */
-    letter-spacing: 1px; /* Improves readability */
-  }
-  
-  .about-image {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #007bff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px; /* Adds space between image and text */
-  }
-  
-  .about-text {
-    font-size: 1.2rem;
-    color: #e0e0e0; /* Light gray text for contrast */
-    max-width: 700px;
-    text-align: justify; /* Makes the paragraph look like a professional book */
-    line-height: 1.8; /* Increases spacing for better readability */
-    padding: 0 20px; /* Adds some padding on the sides */
-    font-weight: 400; /* Ensures clean, readable text */
-  }
-  
-  .about-image:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  min-height: 100vh;
+  background: linear-gradient(to right, #0d1b2a, #1b263b);
+  color: white;
+}
+
+/* Two-Column Layout */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Profile Section */
+.profile-section {
+  text-align: center;
+  flex: 1;
+}
+
+.about-image {
+  width: 200px; /* Bigger and clearer image */
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+}
+
+.about-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.about-subtitle {
+  font-size: 1.2rem;
+  color: #a8dadc;
+}
+
+/* Text Section */
+.about-text-section {
+  flex: 2;
+  max-width: 600px;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Styling for Both Sections */
+.languages-container {
+  text-align: center;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5rem; /* Added spacing */
+}
+
+/* Evenly styled titles */
+.languages-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #a8dadc;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Grid Layout for Even Columns */
+.languages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Individual Language Cards */
+.language-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  min-height: 60px; /* Ensures all cards are same height */
+}
+
+.language-card:hover {
+  transform: scale(1.05);
+}

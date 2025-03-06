@@ -120,3 +120,23 @@ body {
     background-color: #0d1b2a; /* Midnight blue */
     color: white; /* Ensures text stays readable */
 }
+
+.typing-effect {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid white; /* Cursor effect */
+    display: inline-block;
+    animation: blinkCursor 0.7s infinite;
+    margin-bottom: 1rem;
+}
+
+/* Blinking cursor animation */
+@keyframes blinkCursor {
+    50% {
+        border-color: transparent;
+    }
+}

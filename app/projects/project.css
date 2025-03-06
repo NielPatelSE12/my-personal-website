@@ -1,69 +1,116 @@
+/* Projects Section Styling */
 .projects-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #001f3f; /* Dark Blue */
-    color: #ffffff;
-    font-family: 'Arial', sans-serif;
-    padding: 50px 20px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #001f3f 30%, #003366 90%);
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+/* Title */
+.projects-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Subtitle */
+.projects-text {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 30px;
+  color: #d1d1d1;
+}
+
+/* Project Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* Individual Project Card */
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px); /* Glass Effect */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Hover Effect */
+.project-card:hover {
+  transform: translateY(-7px) scale(1.02);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Project Icon */
+.project-icon {
+  font-size: 3rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* Project Image */
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  border: 5px solid #007bff;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect on Image */
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
+/* Project Title */
+.project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* Project Description */
+.project-description {
+  font-size: 1.1rem;
+  color: #d1d1d1;
+  text-align: justify;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .projects-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+      font-size: 2.5rem;
   }
-  
+
   .projects-text {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin-bottom: 30px;
-    color: #d1d1d1;
+      font-size: 1rem;
   }
-  
+
   .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    width: 90%;
-    max-width: 1000px;
+      grid-template-columns: 1fr;
   }
-  
-  .project-card {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .project-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .project-image {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
-  }
-  
-  .project-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #ffffff;
-    margin-bottom: 10px;
-  }
-  
-  .project-description {
-    font-size: 1rem;
-    color: #d1d1d1;
-    text-align: justify; /* Ensures proper text wrapping */
-    word-wrap: break-word; /* Forces long words to break properly */
-    overflow-wrap: break-word;
-  }
-  
+}

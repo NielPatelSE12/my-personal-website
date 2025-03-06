@@ -1,6 +1,22 @@
+"use client";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 export default function Home() {
+  const [text, setText] = useState("");
+  const fullText = "Niel Patel, Software Engineer";
+  const typingSpeed = 250; // Adjust speed (in ms) for typing effect
+
+  useEffect(() => {
+    let i = 0;
+    const interval = setInterval(() => {
+      setText(fullText.substring(0, i + 1));
+      i++;
+      if (i === fullText.length) clearInterval(interval);
+    }, typingSpeed);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="page-container">
       {/* Background Layer */}
@@ -8,7 +24,8 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="main-content">
-        <h1>Niel Patel, Software Engineer</h1>
+        {/* Typing Effect for "Software Intervention" */}
+        <h1 className="typing-effect">{text}</h1>
         <p>
           Hi, My name is Niel Patel. I am passionate about web development,
           particularly utilizing the React.js framework, as well as iOS
