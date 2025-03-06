@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Home() {
   const [text, setText] = useState("");
   const fullText = "Niel Patel, Software Engineer";
-  const typingSpeed = 250; // Adjust speed (in ms) for typing effect
+  const typingSpeed = 150; // Adjust speed (in ms) for typing effect
 
   useEffect(() => {
     let i = 0;
