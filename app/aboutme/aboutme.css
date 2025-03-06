@@ -1,0 +1,47 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: #001f3f; /* Dark Blue */
+    font-family: 'Georgia', 'Times New Roman', serif; /* Professional text style */
+    padding-top: 50px; /* Moves content up */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff; /* White text */
+    margin-bottom: 15px;
+    text-transform: uppercase; /* Makes it look more professional */
+    letter-spacing: 1px; /* Improves readability */
+  }
+  
+  .about-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #007bff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px; /* Adds space between image and text */
+  }
+  
+  .about-text {
+    font-size: 1.2rem;
+    color: #e0e0e0; /* Light gray text for contrast */
+    max-width: 700px;
+    text-align: justify; /* Makes the paragraph look like a professional book */
+    line-height: 1.8; /* Increases spacing for better readability */
+    padding: 0 20px; /* Adds some padding on the sides */
+    font-weight: 400; /* Ensures clean, readable text */
+  }
+  
+  .about-image:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  

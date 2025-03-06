@@ -1,0 +1,122 @@
+.navbar {
+    display: flex;
+    justify-content: space-around; /* Evenly spaces buttons across the navbar */
+    align-items: center;
+    width: 100vw; /* Ensures full width */
+    background: linear-gradient(90deg, #0d3b66, #114893); /* Modern gradient effect */
+    padding: 1.2rem 2rem; /* Gives a more structured layout */
+    position: fixed; /* Keeps navbar at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures it's above other content */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Adds depth */
+}
+
+/* Navbar Links */
+.navbar-link {
+    flex-grow: 1; /* Makes each link take equal space */
+    text-align: center; /* Centers the text */
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent buttons */
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px; /* Smooth rounded corners */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.navbar-link:hover {
+    background: rgba(255, 255, 255, 0.3); /* Adds a nice hover effect */
+    transform: scale(1.05); /* Slight scaling for interactivity */
+}
+
+/* Navbar Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .navbar-link {
+        width: 100%; /* Makes links full-width in mobile */
+        margin: 5px 0;
+    }
+}
+
+/* Adjusts body to prevent content overlap */
+body {
+    margin: 0;
+    padding-top: 4.5rem; /* Prevents content from hiding under the navbar */
+}
+
+
+/* Global Page Styling */
+.page-container {
+    display: grid;
+    grid-template-rows: 20px 1fr 20px;
+    align-items: center;
+    justify-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    padding-bottom: 5rem;
+    gap: 4rem;
+}
+
+/* Background Image */
+.background {
+    background-image: url('homepageimage.webp'); /* Ensure correct path */
+    background-size: cover; /* Ensures it covers the full screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    width: 100vw; /* Sets width to full viewport width */
+    height: 100vh; /* Sets height to full viewport height */
+    position: fixed; /* Ensures it stays in place */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Keeps the background behind other content */
+}
+
+
+/* Main Content Styling */
+/* Main Content Styling */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start; /* Aligns content to the left */
+    text-align: left; /* Ensures text is aligned properly */
+    max-width: 420px; /* Slightly wider for better readability */
+    background: rgba(25, 42, 86, 0.9); /* Midnight blue with slight transparency */
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow for depth */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Subtle glowing effect */
+    position: absolute;
+    top: 62%;
+    left: 1rem; /* Moves it to the left */
+    transform: translateY(-50%);
+}
+
+
+/* Text Styling for Readability */
+.main-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff; /* Pure white for contrast */
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.1); /* Soft glow */
+}
+
+.main-content p {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.9); /* Softer white for better contrast */
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Midnight Blue Background for Entire Page */
+body {
+    background-color: #0d1b2a; /* Midnight blue */
+    color: white; /* Ensures text stays readable */
+}
