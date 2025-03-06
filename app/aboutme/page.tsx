@@ -7,7 +7,7 @@ export default function About() {
       <div className="about-content">
         {/* Profile Section */}
         <div className="profile-section">
-          <img src="/selfimage.jpg" alt="Profile" className="about-image" />
+          <img src="./selfimage.jpg" alt="Profile" className="about-image" />
           <h1 className="about-title">Niel Patel</h1>
           <h2 className="about-subtitle">Software Engineer</h2>
         </div>

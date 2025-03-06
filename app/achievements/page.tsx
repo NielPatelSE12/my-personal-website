@@ -6,14 +6,14 @@ export default function Achievements() {
       title: "Cyber Security Sunshine State Event",
       description:
         "I had the opportunity to represent Florida Gulf Coast University at the Cyber Security Sunshine State event in Tampa, Florida. During the event, I spoke about our university’s programs, including the new Computer Science concentration and the Master’s program in Software Engineering. Additionally, I engaged with representatives from other cybersecurity-focused institutions and industry professionals, exchanging ideas on career development and advancements in the field.",
-      image: "/cyberSunShine.jpg",
+      image: "./cyberSunShine.jpg",
       icon: "🔒", // Cybersecurity Icon
     },
     {
       title: "EagleX Research Presentation Day",
       description:
         "Zero Trust Protects Logistic Management: A Dashboard App Development. Rooted in the principle of 'Trust no one,' Zero Trust challenges traditional security paradigms by assuming that every user, device, and connection within a network could be potentially compromised. Logistic Management needs Zero Trust to protect its applications by creating defense techniques from cyber-attacks...",
-      image: "/Research.jpg",
+      image: "./Research.jpg",
       icon: "📊", // Research Presentation Icon
     },
   ];
