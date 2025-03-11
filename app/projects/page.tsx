@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import './project.css';
 import { FaHospital, FaBluetooth, FaGlobe, FaCar } from "react-icons/fa"; // Import Icons
 
@@ -37,7 +38,7 @@ export default function Projects() {
         {projectData.map((project, index) => (
           <div key={index} className="project-card">
             {project.icon}
-            <img src={project.image} alt={project.title} className="project-image" />
+            <Image src={project.image} alt={project.title} className="project-image" width={400} height={300} />
             <h2 className="project-title">{project.title}</h2>
             <p className="project-description">{project.description}</p>
           </div>

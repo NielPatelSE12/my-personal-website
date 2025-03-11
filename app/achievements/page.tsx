@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import './achievements.css';
 
 export default function Achievements() {
@@ -25,11 +26,7 @@ export default function Achievements() {
         {achievementsData.map((achievement, index) => (
           <div key={index} className="achievement-card">
             <span className="achievement-icon">{achievement.icon}</span>
-            <img
-              src={achievement.image}
-              alt={achievement.title}
-              className="achievement-image"
-            />
+            <Image src={achievement.image} alt={achievement.title} className="achievement-image" width={300} height={200} />
             <h2 className="achievement-title">{achievement.title}</h2>
             <p className="achievement-description">{achievement.description}</p>
           </div>
