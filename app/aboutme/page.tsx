@@ -8,14 +8,6 @@ export default function About() {
       <div className="about-content">
         {/* Profile Section */}
         <div className="profile-section">
-          <Image 
-            src="/selfimage.jpg" 
-            alt="Profile" 
-            className="about-image" 
-            width={200} 
-            height={200} 
-            unoptimized={true} // 🔥 Disables Next.js optimization for GitHub Pages
-          />
           <h1 className="about-title">Niel Patel</h1>
           <h2 className="about-subtitle">Software Engineer</h2>
         </div>
