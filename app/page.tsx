@@ -1,5 +1,4 @@
 "use client";
-import Image from 'next/image';
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -40,14 +39,6 @@ export default function Home() {
           development skills, focusing on the React.js framework.
         </p>
       </main>
-      <Image 
-            src="/selfimage.jpg" 
-            alt="Profile" 
-            className="about-image" 
-            width={200} 
-            height={200} 
-            unoptimized={true} // 🔥 Disables Next.js optimization for GitHub Pages
-          />
     </div>
   );
 }
